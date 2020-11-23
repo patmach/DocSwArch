@@ -1,14 +1,29 @@
-# Presentation #
+# Module viewpoint #
+## Overview ##
+- krátký okec o čem to je
 
-# Domain #
+## Decomposition viewpoint ##
+### Presentation ###
 
-# Data Access #
+### Domain ###
 
-<object data="https://github.com/patmach/DocSwArch/blob/main/viewpoints/img/ReservationUsageViewpoint.pdf" type="application/pdf" width="700px" height="700px">
-    <embed src="img/ReservationUsageViewpoint.pdf">
-        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="https://github.com/patmach/DocSwArch/blob/main/viewpoints/img/ReservationUsageViewpoint.pdf">Download PDF</a>.</p>
-    </embed>
-</object>
+### Data Access ###
 
-![Image of reservations](img/ReservationUsageViewpoint.png)
+## Usage viewpoint ##
+### Equipment ###
+
+[PDF version](img/EquipmentUsageViewpoint.pdf)
+
+![Image description.](img/EquipmentUsageViewpoint.png)
+
+### Reservation ###
+
 [PDF version](img/ReservationUsageViewpoint.pdf)
+
+![Image description.](img/ReservationUsageViewpoint.png)
+
+### Examination ###
+
+[PDF version](img/ExaminationUsageViewpoint.pdf)
+
+![Image description.](img/ExaminationUsageViewpoint.png)
