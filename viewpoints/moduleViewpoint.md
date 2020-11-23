@@ -10,4 +10,5 @@
     </embed>
 </object>
 
-![Image of reservations](img/ReservationUsageViewpoint.pdf)
+![Image of reservations](img/ReservationUsageViewpoint.png)
+[PDF version](img/ReservationUsageViewpoint.pdf)
