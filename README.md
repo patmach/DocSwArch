@@ -12,6 +12,6 @@
 - popis toho, jak jsou dokumentované (opět si nejsem jistý, jak moc je to tu nutné)
 
 ## Module viewpoint ##
-[Module viewpoint](/viewpoints/moduleViewpoint.md)
+[Module viewpoint](viewpoints/moduleViewpoint.md)
 
 ## Component and connector viewpoint ##
