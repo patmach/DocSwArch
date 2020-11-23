@@ -5,6 +5,7 @@
 [PDF version](img/CnC.pdf)
 
 ![Image description.](img/CnC.png)
+![Image description.](img/CnC2.png)
 
 ## Data flow viewpoint ##
 ### Presentation ###
