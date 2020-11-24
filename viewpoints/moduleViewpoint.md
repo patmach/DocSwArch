@@ -61,7 +61,7 @@ For greater clarity, we split the usage viewpoint into three more detailed parts
     - The HTTP connector submodule which after ~~?calls or uses?~~:
       - List equipments
       - Get actual state
-      - Get detail information submodules
+      - Get detail information submodules  
       Those submodules then use the Equipment submodule in the Model module, which in turn uses:
         - the Equpment gateway submodule in the Data Access module
     - Authorization service module, which then uses:
