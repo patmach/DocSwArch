@@ -56,11 +56,17 @@ For greater clarity, we split the usage viewpoint into three more detailed parts
 
 ![Image description.](img/EquipmentUsageViewpoint.png)
 
-This viewpoint shows dependencies among modules used when the user wants to get data related to the equipment.
+- This viewpoint shows dependencies among modules used when the user wants to get data related to the equipment:
+  - Submodules from the UI module use the Equipment Services module, specifically:
+    - The HTTP connector submodule which after ~~?calls or uses?~~:
+      - List equipments
+      - Get actual state
+      - Get detail information submodules
+      Those submodules then use the Equipment submodule in the Model module, which in turn uses:
+        - the Equpment gateway submodule in the Data Access module
+    - Authorization service module, which then uses:
+      - the User module
 
-Submodules from the UI module use the Equipment Services module, specifically the HTTP connector submodule which after ~~?calls or uses?~~ List equipments, Get actual state or Get detail information submodules. Those submodules then use the Equipment submodule in the Model module, which in turn uses the Equpment gateway submodule in the Data Access module. Equipment Services module also uses the Authorization service module, which then uses the User module. 
-
-> Information about the user can be recieved from the database containing data about users (e.g. user credentials). Information about the equipment can be recieved from the database containing data about equipment. In case when data about the related equipment is not in the database, the Data Access submodule can request them directly from the application via Equipment API.
 
 ### Reservation ###
 
