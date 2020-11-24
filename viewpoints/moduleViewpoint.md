@@ -5,7 +5,44 @@
 ## Decomposition viewpoint ##
 ### Presentation ###
 
+- Presentation submodule contains different views user would want to see when using this application: 
+  - **List of equipments** 
+  - **Equipment** **detail** 
+  - **List of** **reservations** on specified equipment 
+  - **Create** **reservations** 
+    - User needs API for creating new reservation 
+  - **List of examinations** on specified equipment 
+  - **Examination Detail** 
+  - **Authentication** 
+    - User needs to authenticate yourself to have access to views above 
+
 ### Domain ###
+
+- This module processes the requests from users, performs database updates and creates responses for users 
+
+- It is divided to **Services** and **Model** sumbodules: 
+  - **Model** is used as a structure for an easy access to data for **S****ervices** 
+  - It has the following submodules: 
+    - **Equipment** - represents the current state of equipment 
+    - **Reservation** - list of reservations on the equipment 
+    - **Examination** - list of examinations which were made on the equipment 
+    - **User** - data for user authentication and authorization 
+  - **Services** processes user requests and updates **Model** accordingly 
+  - It consists of: 
+    - **Authorization** **service** - it is used by every other service to authorize and authenticate the user who performs the request 
+    - **Equipment** **services**: 
+      - **Equipmnent** **API** - handles the connection to the **Presentation** 
+      - **List** **equipments** 
+      - **Get actual state** 
+      - **Get detail** **information** 
+    - **Reservation** **services****:** 
+    - **Reservation** **API** - handles the connection to the **Presentation** 
+      - **Show** 
+      - **Create** 
+    - **Examination** **services****:** 
+      - **Examination** **API** - handles the connection to the **Presentation** 
+      - **List examinations** 
+      - **Get examination detail** 
 
 ### Data Access ###
 
